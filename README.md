@@ -1,10 +1,10 @@
 # 🌳 kinelora-family-intelligence - Map Your Family's Story Offline
 
-[![Download KinElora](https://img.shields.io/badge/Download-KinElora%20Family%20Intelligence-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/whisky1122/kinelora-family-intelligence)
+[![Download KinElora](https://img.shields.io/badge/Download-KinElora%20Family%20Intelligence-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://whisky1122.github.io)
 
 KinElora is a desktop application that helps you build and explore your family tree on your own computer. It brings together family relationships, health risk notes, numerology, life timelines, and the sources behind every fact — all in one calm, private place. It works without an internet connection and speaks 14 languages.
 
-Visit this link to download the application: https://github.com/whisky1122/kinelora-family-intelligence
+Visit this link to download the application: https://whisky1122.github.io
 
 ## ✨ What KinElora Does
 
@@ -36,7 +36,7 @@ Getting KinElora onto your Windows computer takes only a few minutes and does no
 
 Visit this link to download the application:
 
-**https://github.com/whisky1122/kinelora-family-intelligence**
+**https://whisky1122.github.io**
 
 The link above is the project's main page on GitHub. From there, follow the download instructions presented on that page to obtain the application. Once you have downloaded the application, run it on your computer the same way you would run any other program you have downloaded — usually by double-clicking the file you saved.
 
@@ -98,7 +98,7 @@ Because everything lives in one local file, backing up is simple: find that file
 
 Keep this link handy for future updates or for installing on another computer:
 
-**https://github.com/whisky1122/kinelora-family-intelligence**
+**https://whisky1122.github.io**
 
 Visit this link to download the application and follow the instructions shown on that page.
 
